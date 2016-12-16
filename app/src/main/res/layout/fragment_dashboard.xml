@@ -1,13 +1,37 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="id.web.alterationstudio.sewainaja.alterfest.DashboardFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hai,"
+        android:id="@+id/tvHai"
+        android:textSize="30sp"
+        android:layout_above="@+id/tvSaldo"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="67dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saldo Kamu Adalah"
+        android:id="@+id/textView2"
+        android:textSize="30sp"
+        android:layout_above="@+id/tvSaldo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp100.000.000"
+        android:id="@+id/tvSaldo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="27sp" />
+</RelativeLayout>
